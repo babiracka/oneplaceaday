@@ -11,8 +11,21 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require tinymce-jquery
 //= require_tree .
 //= require turbolinks
+
+  $.datepicker.setDefaults({maxDate: "+0D"})
+
+  $(function() {
+  	$( "#datepicker" ).datepicker();
+  });
+  $(function (){
+	  var dateInput = $("#post_visited_on");
+	  var format = 'yy-mm-dd';
+	  dateInput.datepicker({dateFormat: format});
+	  dateInput.datepicker('setDate', $.datepicker.parseDate(format, dateInput.val()));
+  });

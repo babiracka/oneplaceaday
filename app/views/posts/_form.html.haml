@@ -4,7 +4,7 @@
 %br
 = f.input :description, input_html: {rows: 20, cols: 100}, label: 'Description'
 = f.input :place, placeholder: 'ex: Pune'
-= f.input :country, placeholder: 'ex: India', as: :string
-= f.input :visited_on, placeholder: 'ex: April, 2011'
+= f.input :country
+= f.input :visited_on, placeholder: 'ex: 07/03/2015', id: 'datepicker', size:10
 = f.hidden_field :user_id, value: current_user.id
 = f.hidden_field :aasm_state, value: @post.aasm_state

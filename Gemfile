@@ -59,6 +59,7 @@ gem 'rails_12factor'
 gem 'friendly_id', '~> 5.1.0'
 gem 'aasm'
 
-
+gem 'country_select', github: 'stefanpenner/country_select'
 gem 'jquery-turbolinks'
+gem 'jquery-ui-rails'
 
