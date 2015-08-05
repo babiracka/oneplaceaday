@@ -24,7 +24,7 @@
       %p.title
         = @post.title
         = get_like_button(@post, current_user)
-        %span.glyphicon.glyphicon-eye-open.untitle= @post.views_count
+        %span.glyphicon.glyphicon-eye-open.untitle= @post.views_count 
     = image_tag @post.photo.url
     .description
       = @post.description

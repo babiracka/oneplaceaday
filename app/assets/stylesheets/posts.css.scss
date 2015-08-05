@@ -1,6 +1,8 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('http://fonts.googleapis.com/css?family=Pacifico&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:300italic');
 
 body {
   min-height:700px;
@@ -12,14 +14,15 @@ body {
 
 a{
   color:black;
-  font-family: 'Kalam', cursive;
+  font-family: 'Pacifico', cursive;
+  line-height: 30px;
 }
 
 h1 {
   font-size:60px;
   text-align:center;
   border-bottom: 20px solid rgba( 1, 1, 1, 0.04 );
-  font-family: 'Kalam', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 a{
@@ -36,7 +39,7 @@ a{
 }
 
 .small-text, .info{
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Josefin Slab', cursive;
 }
 
 .medium-text{
@@ -64,44 +67,62 @@ a{
 
 .image-container img {
   margin-top:10px;
+  margin-bottom:20px;
 }
 
 .image-container div.description{
   font-size:25px;
-  text-align:left;
+  text-align:justify;
   padding-left:70px;
   padding-right:70px;
-  font-family: 'Kalam', cursive;
+  font-weight:300;
+  font-style:italic;
+  font-family: 'Josefin Slab', cursive;
+  margin-bottom:10px;
 }
 
 .image-container div.small_description{
   height:30%;
   overflow:hidden;
   font-size:20px;
-  text-align:left;
-  font-family: 'Kalam', cursive;
+  text-align:justify;
+  font-weight: 300;
+  font-family: 'Josefin Slab', cursive;
 }
 
 .image-container p.small_title, p.small_title a {
   font-size:30px;
-  font-family: 'Kalam', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 .image-container p.title, p.title a {
   font-size:50px;
   font-weight:500;
-  font-family: 'Kalam', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 
 .title {
   font-size:50px;
-  font-weight:500;
-  font-family: 'Kalam', cursive;
+  font-weight:300;
+  font-family: 'Pacifico', cursive;
 }
 
 .title .untitle{
-  font-size:15px;
+  line-height: 40px !important;
+  font-size:20px;
+  vertical-align: middle;
+  margin-bottom:10px; 
+/*  margin-left: 4px;
+  margin-bottom: 4px;*/
+} 
+
+.title .untitle:before{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  /*margin-left: 6px;*/
+  /*margin-bottom: 4px;*/
 }
 
 .red {
@@ -126,8 +147,8 @@ nav{
 }
 
 p.txtStyle{
-  font-family: 'Kalam', cursive;
-  font-weight:500;
+  font-family: 'Josefin Slab', serif;
+  font-weight:300;
   //font-family: 'Dancing Script', cursive;
 }
 
@@ -150,6 +171,7 @@ img.medium-image {
 .comment-text{
   text-align:left;
   float:left;
+  font-family:'Josefin Slab';
 }
 
 .commentBox{
@@ -188,6 +210,7 @@ img.medium-image {
 
 .btn-state_label {
   font-weight: 500;
+  
 }
 
 .navbar-top__space {
