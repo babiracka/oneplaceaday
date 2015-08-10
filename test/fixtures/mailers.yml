@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  added: MyString
+  confirmed: MyString
+  subtoken: MyString
+  unsubtoken: MyString
+
+two:
+  added: MyString
+  confirmed: MyString
+  subtoken: MyString
+  unsubtoken: MyString
