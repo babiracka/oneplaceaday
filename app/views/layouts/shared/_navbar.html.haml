@@ -17,6 +17,8 @@
             %span.sr-only (current)
         %li{:class => "#{set_active(params, 'add post')}"}
           %a{:href => new_post_path} Add Post
+        %li{:class => "#{set_active(params, 'subscribe')}"}
+          %a{:href => new_subscription_path} Subscribe 
       %ul.nav.navbar-nav.navbar-left{:role => "search"}
         / Search
         = form_tag(search_path(:query), :method => :get) do 

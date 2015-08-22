@@ -27,6 +27,10 @@ Rails.application.routes.draw do
   get 'search' => 'posts#index', as: :search
 
   get '/likes/:post_id/:user_id/up_or_down' => 'likes#up_or_down', as: :like_unlike
+  # get 'subscribe' => 'home#subscribe'
+
+  resources :subscriptions, only: [:new, :create]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

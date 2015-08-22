@@ -17,4 +17,6 @@
         = render 'layouts/shared/navbar'
       - unless ['index', 'draft_posts', 'moderated_posts', 'published_posts'].include?(params[:action]) and params[:controller] == 'posts'
         %br
+      %p#notice
+        = flash[:notice]
       = yield

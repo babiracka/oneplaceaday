@@ -63,3 +63,5 @@ gem 'aasm'
 
 gem 'jquery-turbolinks'
 
+gem 'email_validator', :require => 'email_validator/strict'
+gem 'pry-rails', :group => :development

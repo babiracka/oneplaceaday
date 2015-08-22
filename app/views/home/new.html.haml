@@ -1,0 +1,7 @@
+.row
+	.col-md-10.col-md-offset-1.box-container
+		%h2 Subscribe to our newsletter!
+		%p You will receive an email notification each time someone posts new place that makes them happy on this page and a monthly summary.
+		- form_for(@mailer, url: subscriptions_path) do |f|
+			= f.text_field_tag :email
+			= f.submit params[:email]

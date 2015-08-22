@@ -17,3 +17,7 @@
 #sthoverbuttons #sthoverbuttonsMain {
   width: 45px !important;
 }
+
+#notice {
+	color: green
+}
